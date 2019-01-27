@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--
+  Name: Chinyan Ollor
+  Date Created: 1/25/2019
+  Most recent revision:
+  -->
+<html lang="en">
+
+<html>
+<head>
+    <title>Lucky Sevens</title>
+    <link href= rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="luckySevens.js"></script>
+<style>
+body {
+  text-align:center;
+}
+h1 {
+  font-size: 2em;
+  font-style: italic;
+
+}
+button{
+  margin-top: 12px;
+  background-color: #ffcc00;
+  color: black;
+}
+table {
+  text-align:center;
+}
+
+
+</style>
+
+</head>
+<body>
+
+    <!-- BET STUFFS -->
+
+<div id="gameDiv">
+    <h1>Lucky Sevens</h1>
+
+    <span>Starting Bet:<input type="number" name="Starting Bet" id="betInput" placeholder="$0.00"></span>
+        <br/>
+            <button onclick="play();return false;" id="playButton">Play</button>
+
+    </div>
+
+    <!-- RESULT STUFFS -->
+
+<hr />
+    <div id="results">
+        <table>
+        <caption><h2>Results</h2></caption>
+            <tr>
+                <th>Starting Bet</th>
+                <th id="resultsBet"></th>
+            </tr>
+            <tr>
+                <td>Total Rolls Before Going Broke:</td>
+                <td id="resultsRollCounter"></td>
+            </tr>
+            <tr>
+                <td>Highest Amount Won:</td>
+                <td id="resultsHighestHeld"></td>
+            </tr>
+            <tr>
+                <td>Roll Count at Highest Amount Won:</td>
+                <td id="resultsRollsFromHighest"></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
